@@ -1,0 +1,318 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- CUSTOM STYLE -->
+    <style>
+        body
+        {
+            background:linear-gradient(90deg,#ffbc00,#ff0058);
+           
+        }
+        .title
+        {
+            text-decoration: none;
+            color: aliceblue;
+            font-size: 35px;
+            font-weight: 700;
+        }
+        .title:hover
+        {
+            color: wheat;
+        }
+        .a_btn 
+        {
+            background-color: rgb(0, 0, 0);
+            font-weight: 500;
+        }
+        .a_btn a 
+        {
+            color: rgb(255, 255, 255);
+        }
+ 
+
+        .a_btn:hover
+        {
+            background-color: rgb(158, 252, 8);
+        }
+        .LS_msg
+        {
+            /* color: gold; */
+            /* margin-top: 300px; */
+            font-style: italic;
+        }
+        a
+        {
+            text-decoration: none;
+        }
+      
+        /* xxxxxx */
+        
+
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+        font-family: 'Josefin Sans', sans-serif;
+        }
+
+        
+
+
+        .wrapper{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 850px;
+        height: 500px;
+        display: flex;
+        box-shadow: 0 1px 20px 0 rgba(69,90,100,.08);
+        }
+
+        .wrapper .left{
+        width: 35%;
+        background: linear-gradient(to right,#01a9ac,#01dbdf);
+        padding: 30px 25px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        text-align: center;
+        color: #fff;
+        }
+
+        .wrapper .left img{
+        border-radius: 5px;
+        margin-bottom: 10px;
+        }
+
+        .wrapper .left h4{
+        margin-bottom: 10px;
+        }
+
+        .wrapper .left p{
+        font-size: 12px;
+        }
+
+        .wrapper .right{
+        width: 65%;
+        background: #fff;
+        padding: 30px 25px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        }
+
+        .wrapper .right .info,
+        .wrapper .right .projects{
+        margin-bottom: 25px;
+        }
+
+        .wrapper .right .info h3,
+        .wrapper .right .projects h3{
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #e0e0e0;
+            color: #353c4e;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        }
+
+        .wrapper .right .info_data,
+        .wrapper .right .projects_data{
+        display: flex;
+        justify-content: space-between;
+        }
+
+        .wrapper .right .info_data .data,
+        .wrapper .right .projects_data .data{
+        width: 45%;
+        }
+
+        .wrapper .right .info_data .data h4,
+        .wrapper .right .projects_data .data h4{
+            color: #353c4e;
+            margin-bottom: 5px;
+        }
+
+        .wrapper .right .info_data .data p,
+        .wrapper .right .projects_data .data p{
+        font-size: 13px;
+        margin-bottom: 10px;
+        color: #919aa3;
+        }
+
+        .wrapper .social_media ul{
+        display: flex;
+        }
+
+        .wrapper .social_media ul li{
+        width: 45px;
+        height: 45px;
+        background: linear-gradient(to right,#01a9ac,#01dbdf);
+        margin-right: 10px;
+        border-radius: 5px;
+        text-align: center;
+        line-height: 45px;
+        }
+
+        .wrapper .social_media ul li a{
+        color :#fff;
+        display: block;
+        font-size: 18px;
+        }
+
+/* SEARCHBOx */
+            .input{
+                border: 0;
+                outline: none;
+                color: #8b7d77;
+            }
+
+            .search_wrap{
+                width: 500px;
+                margin: 38px auto;
+            }
+
+            .search_wrap .search_box{
+                position: relative;
+                width: 500px;
+                height: 60px;
+            }
+
+            .search_wrap .search_box .input{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                padding: 10px 20px;
+                border-radius: 3px;
+                font-size: 18px;
+            }
+            :checked
+            {
+                display: none;
+            }
+            button
+            {
+                display: inline-flex;
+                
+                /* color: #01a9ac; */
+            }
+            .search_wrap .search_box .btn{
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 60px;
+                height: 100%;
+                background: #0f0f0f;
+                z-index: 1;
+                cursor: pointer;
+            }
+
+            .search_wrap .search_box .btn:hover{
+                background: #323a4d;	
+            }
+
+            .search_wrap .search_box .btn.btn_common .fas{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                color: #fff;
+                font-size: 20px;
+            }
+
+            .search_wrap.search_wrap_1 .search_box .btn{
+                right: 0;
+                border-top-right-radius: 3px;
+                border-bottom-right-radius: 3px;
+            }
+
+            .search_wrap.search_wrap_1 .search_box .input,
+            .search_wrap.search_wrap_3 .search_box .input{
+                padding-right: 80px;
+            }
+
+            .search_wrap.search_wrap_2 .search_box .btn{
+                left: 0;
+                border-top-left-radius: 3px;
+                border-bottom-left-radius: 3px;
+            }
+
+            .search_wrap.search_wrap_2 .search_box .input,
+            .search_wrap.search_wrap_4 .search_box .input{
+                padding-left: 80px;
+            }
+
+            .search_wrap.search_wrap_3 .search_box .input,
+            .search_wrap.search_wrap_4 .search_box .input,
+            .search_wrap.search_wrap_6 .search_box .input{
+                border-radius: 50px;
+            }
+
+            .search_wrap.search_wrap_3 .search_box .btn{
+                right: 0px;
+                border-radius: 50%;
+            }
+            /* STARS */
+    </style>
+
+    <!-- TITLE -->
+    <title>HOME</title>
+</head>
+<body>
+    
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <!-- HEADER | NAVBAR -->
+    <header class="p-1 bg-dark text-white">
+        <nav>
+            <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <!-- <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"> -->
+                    <a class="title" href="#">TASK3</a>
+                <!-- <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg> -->
+                </a>
+        
+                <ul class="nav col-12 col-lg-auto me-lg-auto  justify-content-center mb-md-0 mx-4">
+                <li><a href="#" class="nav-link px-2 text-white">HOME</a></li>
+               
+                </ul>
+                {% if user.is_authenticated%}
+
+                <div class=" d-flex ">
+                 
+              
+                    <button type="button" class="btn btn-outline-light me-2 a_btn" href="#"><a href="{% url 'profile' %}">MY PROFILE</a></button>
+                    <button type="button" class="btn btn-outline-light me-2 a_btn"><a href="{% url 'logout' %}">LOGOUT    </a></button>
+                 </div>
+                 {% else %}
+                <div class="text-end">
+                    <button type="button" class="btn btn-outline-light me-2 a_btn" href="#"><a href="{% url 'login' %}">LOGIN</a></button>
+                    <button type="button" class="btn btn-outline-light me-2 a_btn"><a href="{% url 'register' %}">SIGNUP</a></button>
+                </div>
+                {% endif %}
+            </div>
+            </div>
+        </nav>
+      </header>
+      <!-- END OF HEADER | NAVBAR -->
+    
+      <div class="container">
+        {% block content %}{% endblock content %}
+      </div>
+      
+    
+
+
+    <!-- BOOTSTRAP JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>

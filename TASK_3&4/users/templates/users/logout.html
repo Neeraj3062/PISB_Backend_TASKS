@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>LOGOUT</title>
+
+    <style>
+        a
+        {
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 700;
+            color: rgb(99, 54, 0);
+        }
+        a:hover
+        {
+            background-color: aquamarine;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h2>ThankYou For Visiting the Website!!!!!   <i class='bx bx-smile'></i></h2>
+    <h3>You have been Logged OUT</h3>
+
+        <div class="border-top pt-3">
+            <small class="text-muted">
+               <a  href="{% url 'login'%}" >Login In Again</a>
+            </small>
+        </div>
+    </center>        
+</body>
+</html>
